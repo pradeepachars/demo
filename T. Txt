@@ -1,0 +1,19 @@
+inp = input ("enter the message :")
+
+a=" abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+b="zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA  " 
+
+var = ""
+
+for i in inp :
+	var+=b[a.index(i)]
+
+print ( var )
+
+inp2 = input ( "do you want to decrypt Y/N : " )
+if inp2 == "Y":
+	for i in var:
+		print(a[b.index(i)],end="")
+else:
+	print("not decrypted")
